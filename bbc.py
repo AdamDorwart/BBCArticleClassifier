@@ -14,11 +14,11 @@ def load_bbc(dataset="", path="."):
       vocPath = os.path.join(path, 'bbc.terms')
       labPath = os.path.join(path, 'bbc.classes')
    elif dataset == "sports":
-      artPath = os.path.join(path, 'bbc.mtx')
-      vocPath = os.path.join(path, 'bbc.terms')
-      labPath = os.path.join(path, 'bbc.classes')
+      artPath = os.path.join(path, 'bbcsport.mtx')
+      vocPath = os.path.join(path, 'bbcsport.terms')
+      labPath = os.path.join(path, 'bbcsport.classes')
    else:
-      raise ValueError("dataset must be ' or 'sports'")
+      raise ValueError("dataset must be '' or 'sports'")
 
    vocab = {}
    counter = 0
